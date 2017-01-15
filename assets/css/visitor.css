@@ -249,6 +249,8 @@ body {
 .about-wrapper{
 	font-size: 14px;
 	margin-bottom: 30px;
+}
+.about-us{
 	text-align: justify;
 }
 
@@ -345,6 +347,7 @@ body {
 }
 
 .social-icon{
+	display: inline;
 	font-size: 40px;
 	margin-right: 20px;
 	color: #FFF;
