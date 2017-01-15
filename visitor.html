@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="assets/img/sa.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/stroke-gap-icons.min.css">
     <link rel="stylesheet" href="assets/css/visitor.css">
 </head>
 
@@ -36,11 +37,11 @@
                     <a class="page-scroll" href="#analisis">Analisis Sentimen</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#kontak">Kontak</a>
+                    <a class="page-scroll" href="#about">Tentang</a>
                 </li>
             </ul>
-            <a class="btn btn-primary navbar-btn" href="https://github.com/hadisub/skripsi" target="_blank"><i
-                    class="fa fa-github"></i> Github</a>
+            <a class="btn btn-primary navbar-btn" href="https://github.com/hadisub/skripsi.git/fork" target="_blank"><i
+                    class="fa fa-github"></i> Fork di Github</a>
         </div>
     </div>
 </nav><!--END OF NAVBAR -->
@@ -48,7 +49,7 @@
 <!--INTRO-->
 <div class="jumbotron sa-jumbotron text-center" id="jumbo">
     <div class="container jumbo-vertical-center">
-        <h1>Sistem Analisis Sentimen Review Film</h1>
+        <h1>Sistem Analisis Sentimen <br> Review Film</h1>
         <p>Lorem ipsum dolor set amet, consectetur adipiscing elit. Mauris ac enim felis.
             Lorem ipsum dolor set amet, consectetur adipiscing elit. Mauris ac enim felis.
         </p>
@@ -57,60 +58,104 @@
 </div>
 
 <div class="intro" id="intro">
-    <div class="container">
-        <p class="stats-title">Dataset</p>
-        <div class="row">
-            <div class="col-lg-3 stats-container">
-                <i class="fa fa-user fa-5x stats-icon"></i>
-                <div class="stats-wrapper">
-                    <p class="stats-number">1201</p>
-                    <p class="stats-text">Total Review FIlm</p>
-                </div>
-            </div>
-            <div class="col-lg-3 stats-container">
-                <i class="fa fa-user fa-5x stats-icon"></i>
-                <div class="stats-wrapper">
-                    <p class="stats-number">635</p>
-                    <p class="stats-text">Review Positif</p>
-                </div>
-            </div>
-            <div class="col-lg-3 stats-container">
-                <i class="fa fa-user fa-5x stats-icon"></i>
-                <div class="stats-wrapper">
-                    <p class="stats-number">566</p>
-                    <p class="stats-text">Review Negatif</p>
-                </div>
-            </div>
-            <div class="col-lg-3 stats-container">
-                <i class="fa fa-user fa-5x stats-icon"></i>
-                <div class="stats-wrapper">
-                    <p class="stats-number">78%</p>
-                    <p class="stats-text">Akurasi Sistem</p>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 intro-container">
+				<i class="icon icon-Files"></i>
+				<div class="intro-wrapper">
+					<p class="intro-number" data-stop="1201">1201</p>
+					<p class="intro-text">Total Review Film</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 intro-container">
+				<i class="icon icon-Like"></i>
+				<div class="intro-wrapper">
+					<p class="intro-number" data-stop="632">632</p>
+					<p class="intro-text">Review Positif</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 intro-container">
+				<i class="icon icon-Dislike"></i>
+				<div class="intro-wrapper">
+					<p class="intro-number" data-stop="569">569</p>
+					<p class="intro-text">Review Negatif</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3 intro-container">
+				<i class="icon icon-Speedometter"></i>
+				<div class="intro-wrapper">
+					<p class="intro-number" data-stop="78">78</p><span class="intro-percentage">%</span>
+					<p class="intro-text"> Akurasi Sistem</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!--ANALISIS SENTIMEN-->
-<div class="container-fluid analisis" id="analisis">
-    <h1>ANALISIS</h1>
+<div class="analisis" id="analisis">
+    <p class="analisis-title">ANALISIS SENTIMEN</p>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<textarea type="text" id="visitor_review" class="form-control textarea" rows="10" spellcheck="false" placeholder="Ketik atau paste review di sini..."></textarea>
+			</div>
+			<button class="btn btn-lg btn-secondary">ANALISIS</button>
+		</form>
+	</div>
 </div>
 
-<!--KONTAK-->
-<div class="kontak" id="kontak">
-    <h1>KONTAK</h1>
+<!--TENTANG-->
+<div class="about" id="about">
+    <div class="container about-container">
+		<div class="rov">
+			<div class="col-sm-4 col=md-4">
+				<div class="about-title">
+					<h3>LIBRARY</h3>
+				</div>
+				<div class="about-wrapper">
+					<p><a class="link" href="https://jquery.com">JQuery</a></p>
+					<p><a class="link" href="http://imakewebthings.com/waypoints">Waypoints</a></p>
+					<p><a class="link" href="http://gsgd.co.uk/sandbox/jquery/easing/">JQuery Easing</a></p>
+				</div>
+			</div>
+			<div class="col-sm-4 col=md-4">
+				<div class="about-title">
+					<h3>TAUTAN</h3>
+				</div>
+				<div class="about-wrapper">
+					<a class="social-icon icon-twitter" href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+					<a class="social-icon icon-email" href="mailto:hadiniizuma@gmail.com"><i class="fa fa-envelope-o"></i></a>
+					<a class="social-icon icon-facebook" href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+					<a class="social-icon icon-instagram" href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+					<a class="social-icon icon-github" href="https://github.com/hadisub" target="_blank"><i class="fa fa-github"></i></a>
+				</div>
+			</div>
+			<div class="col-sm-4 col=md-4">
+				<div class="about-title">
+					<h3>TENTANG DEVELOPER</h3>
+				</div>
+				<div class="about-wrapper">
+					<p>Lorem ipsum dolor set amet, consectetur adipiscing elit. Mauris ac enim felis.
+            Lorem ipsum dolor set amet, consectetur adipiscing elit. Mauris ac enim felis.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
-<footer>
-    <div class="container">
-        <p>&copy Sentiment Analysis | All Rights Reserved</p>
-    </div>
+<footer class="footer" id="footer">
+	<p class="footer-text">&copy Copyright Sentiment Analysis. All rights reserved</br>
+	Powered by <a class="link-bootstrap" href="http://getbootstrap.com">Bootstrap</a></p>
 </footer>
+
 <!--SCRIPTS-->
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.easing.min.js"></script>
 <script src="assets/js/scroll.js"></script>
+<script src="assets/js/jquery.waypoints.js"></script>
+<script src="assets/js/visitor-scripts.js"></script>
+
 </body>
 </html>
